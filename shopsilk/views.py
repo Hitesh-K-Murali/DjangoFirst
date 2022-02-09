@@ -4,4 +4,12 @@ from django.http import HttpResponse
 # Create your views here.
 
 def shopHome ( request ):
-    return HttpResponse ( "<h1> Welcome to Shop Silk </h1>" )
+    silkCollection = [
+        "Banaras",
+        "Pochampalle",
+        "Uppada",
+        "Venkatagiri",
+        "Kaanchipuram",
+        "Dharmavaram",
+    ]
+    return render ( request, "shopsilk/shopHome.html", { 'silkCollections' : silkCollection } )

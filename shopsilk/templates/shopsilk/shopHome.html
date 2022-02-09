@@ -1,0 +1,226 @@
+{% load static %}
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Silk</title>
+    <link rel="stylesheet" href="{% static 'shopsilk/styles/shopHome.css' %}"
+</head>
+<body>
+    <h1>Shop Silk</h1>
+    <p> The Biggest online shop for silk </p>
+
+    <ul>
+    {% for item in silkCollections %}
+        <li>{{ item }}</li>    
+    {% endfor %}
+    </ul>
+    <h2>First collection: {{ silkCollections.0 }}</h2>
+
+</body>
+</html> -->
+
+<!DOCTYPE HTML>
+<!--
+	Hitesh K Murali - Nature Earth
+	hitesh.gen9@gmail.com
+	Location : Earth
+	737,681	Days after AD
+-->
+<html>
+	<head>
+		<title>Nature Earth</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="{% static 'shopsilk/styles/shopHome.css' %}" />
+		<link rel="icon" href="{% static 'shopsilk/images/MotherNatureLogo.png' %}" type="image/x-icon"/>
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header" class="alt">
+				<div class="logo"><a>Mother Nature <span> Home </span></a></div>
+				<a href="#menu">Menu</a>
+			</header>
+
+		<!------------------------------------------- Menu ------------------------------------------>
+			<nav id="menu">
+				<!--<ul class="links">
+					<li><a href="{% templates 'shopsilk/shopHome.html' %}">Home</a></li>
+					<li><a href="{% templates 'shopsilk/elements.html' %}">Articles & Journals</a></li>
+					<li><a href="{% templates 'shopsilk/generic.html' %}">News Letters</a></li>
+					<li><a href="{% templates 'shopsilk/shopHome.html' %}">Contact Us</a></li>
+				</ul>-->
+                <ul class="links">
+					<li><a>Home</a></li>
+					<li><a>Articles & Journals</a></li>
+					<li><a>News Letters</a></li>
+					<li><a>Contact Us</a></li>
+				</ul>
+			</nav>
+
+		<!------------------------------------------ Banner ------------------------------------------->
+			<section class="banner full">
+				<article>
+					<img src="{% static 'shopsilk/images/WaterLife.png' %}" alt="" />
+					<div class="inner">
+						<header>
+							<!-- Insert Ocenas page link -->
+							<p> <a href="https://www.sealegacy.org/">  Life beneath the surface  </a> </p>
+							<h2> WATER LIFE </h2>
+						</header>
+					</div>
+				</article>
+				<article>
+					<img src="{% static 'shopsilk/images/LandLife.png' %}" alt="" />
+					<div class="inner">
+						<header>
+							<!-- Insert Forests Page Link -->
+							<p> <a href="https://www.worldwildlife.org/"> Life above the surface </a> </p>
+							<h2> LAND LIFE </h2>
+						</header>
+					</div>
+				</article>
+				<article>
+					<img src="{% static 'shopsilk/images/PolarLife.png' %}"  alt="" />
+					<div class="inner">
+						<header>
+							<p> The frozen world </p>
+							<h2> POLAR LIFE </h2>
+						</header>
+					</div>
+				</article>
+				<article>
+					<img src="{% static 'shopsilk/images/slide04.jpg' %}"  alt="" />
+					<div class="inner">
+						<header>
+							<p> Life that supports life </p>
+							<h2> FORESTS </h2>
+						</header>
+					</div>
+				</article>
+				<article>
+					<img src="{% static 'shopsilk/images/slide05.jpg' %}"  alt="" />
+					<div class="inner">
+						<header>
+							<p> Day Zero </p>
+							<h2> Counter : </h2>
+						</header>
+					</div>
+				</article>
+			</section>
+
+		<!-- One -->
+			<section id="one" class="wrapper style2">
+				<div class="inner">
+					<div class="grid-style">
+
+						<div>
+							<div class="box">
+								<div class="image fit">
+									<img src="{% static 'shopsilk/images/pic02.jpg' %}" alt="" />
+								</div>
+								<div class="content">
+									<header class="align-center">
+										<p> Industrialization is a global impact on Environment </p>
+										<h2> Development is harming us more than being helping </h2>
+									</header>
+									<p> Industrialization has become more than a need today. Industries which came into existence to enhance the limits of human capabilities are today striving for survival and building up empires in the name of innovation and creation. Yearly the carbon emissions of each country is increasing by more than 15%. This year the country with highest CO2 emmissions is... </p>
+									<footer class="align-center">
+										<a href="#" class="button alt">Learn More</a>
+									</footer>
+								</div>
+							</div>
+						</div>
+
+						<div>
+							<div class="box">
+								<div class="image fit">
+									<img src="{% static 'shopsilk/images/pic03.jpg' %}" alt="" />
+								</div>
+								<div class="content">
+									<header class="align-center">
+										<p> Humans and evolution </p>
+										<h2> Do we realise we that we stopped evolving </h2>
+									</header>
+									<p> According to Michael D. Floug from MIT, humans are losing their intelligence starting late 90s. The ability to store information, calculate, assess, involuntary reflexes and even color blindness. All these things are not happening out of the blue and they are just the effects due to continuous dependency on machines. This may even lead to... </p>
+									<footer class="align-center">
+										<a href="#" class="button alt">Learn More</a>
+									</footer>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+		<!-- Two -->
+			<section id="two" class="wrapper style3">
+				<div class="inner">
+					<header class="align-center">
+						<p>Nam vel ante sit amet libero scelerisque facilisis eleifend vitae urna</p>
+						<h2>Morbi maximus justo</h2>
+					</header>
+				</div>
+			</section>
+
+		<!-- Three -->
+			<section id="three" class="wrapper style2">
+				<div class="inner">
+					<header class="align-center">
+						<p class="special">Nam vel ante sit amet libero scelerisque facilisis eleifend vitae urna</p>
+						<h2>Morbi maximus justo</h2>
+					</header>
+					<div class="gallery">
+						<div>
+							<div class="image fit">
+								<a href="#"><img src="{% static 'shopsilk/images/pic01.jpg' %}" alt="" /></a>
+							</div>
+						</div>
+						<div>
+							<div class="image fit">
+								<a href="#"><img src="{% static 'shopsilk/images/pic02.jpg' %}" alt="" /></a>
+							</div>
+						</div>
+						<div>
+							<div class="image fit">
+								<a href="#"><img src="{% static 'shopsilk/images/pic03.jpg' %}" alt="" /></a>
+							</div>
+						</div>
+						<div>
+							<div class="image fit">
+								<a href="#"><img src="{% static 'shopsilk/images/pic04.jpg' %}" alt="" /></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<ul class="icons">
+						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+					</ul>
+				</div>
+				<div class="copyright">
+					&copy; Untitled. All rights reserved.
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="{% static 'shopsilk/scripts/jquery.min.js' %}"></script>
+			<script src="{% static 'shopsilk/scripts/jquery.scrollex.min.js' %}"></script>
+			<script src="{% static 'shopsilk/scripts/skel.min.js' %}"></script>
+			<script src="{% static 'shopsilk/scripts/util.js' %}""></script>
+			<script src="{% static 'shopsilk/scripts/main.js' %}"></script>
+
+	</body>
+</html>
